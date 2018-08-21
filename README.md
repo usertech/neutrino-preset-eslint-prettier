@@ -6,7 +6,11 @@ Preset for neutrino which sets up `eslint` linting configured for use with `pret
 
 ## Installation
 
+Run
+
     $ yarn add --dev https://github.com/usertech/neutrino-preset-eslint-prettier#0.0.2
+
+and then manually install missing peer dependencies.
 
 ## Usage
 
