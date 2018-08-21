@@ -22,15 +22,14 @@ Create `.eslintrc.js` to provide config for your IDE.
     	.call("eslintrc");
 
 
-Create `.prettierrc.yml` to set up `@usertech` standard rules.
+Create `.prettierrc.js` to set up `@usertech` standard rules.
 
-    # .prettierrc.yml
-    printWidth: 100
-    parser: flow
-    useTabs: true
-    singleQuote: true
-    trailingComma: all
-    arrowParens: always
+    // .prettierrc.js
+    const { Neutrino } = require("neutrino");
+
+    module.exports = Neutrino({ root: __dirname })
+    	.use(".neutrinorc.js")
+    	.call("prettierrc");
 
 `lint` command is added in a same way as if `@neutrinojs/eslint` was used alone.
 

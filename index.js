@@ -1,6 +1,17 @@
 // const deepmerge = require('deepmerge');
 const eslint = require('@neutrinojs/eslint');
 
+const prettierrc = () => {
+	return {
+		printWidth: 100,
+		parser: 'flow',
+		useTabs: true,
+		singleQuote: true,
+		trailingComma: 'all',
+		arrowParens: 'always',
+	};
+};
+
 module.exports = (neutrino, { eslint: eslintOptions = {} } = {}) => {
 	neutrino.use(eslint, {
 		test: neutrino.regexFromExtensions(),
@@ -26,8 +37,13 @@ module.exports = (neutrino, { eslint: eslintOptions = {} } = {}) => {
 			},
 			globals: ['process', 'window', 'document', 'navigator', 'console', 'fetch'],
 			rules: {
-				'prettier/prettier': ['error'],
+				'prettier/prettier': ['error', {}],
 			},
 		},
 	});
+	neutrino.register(
+		'prettierrc',
+		prettierrc,
+		'Return an object of accumulated Prettier configuration suitable for use by .prettierrc.js',
+	);
 };
