@@ -2,7 +2,13 @@
 
 > Work in Progress - the default eslint and prettier settings are open for discussion
 
-Preset for neutrino which sets up `eslint` linting configured for use with prettier.
+Preset for neutrino which sets up `eslint` linting configured for use with `prettier`.
+
+## Installation
+
+    $ yarn add --dev https://github.com/usertech/neutrino-preset-eslint-prettier#0.0.2
+
+## Usage
 
     // .neutrinorc.js
     module.exports = {
