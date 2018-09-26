@@ -4,7 +4,7 @@ const eslint = require('@neutrinojs/eslint');
 const prettierrc = () => {
 	return {
 		printWidth: 100,
-		parser: 'flow',
+		parser: 'typescript',
 		useTabs: true,
 		singleQuote: true,
 		trailingComma: 'all',
