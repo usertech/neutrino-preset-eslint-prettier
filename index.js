@@ -27,11 +27,10 @@ module.exports = (neutrino, { eslint: eslintOptions = {} } = {}) => {
 					extends: [
 						'eslint:recommended',
 						'plugin:react/recommended',
-						'plugin:flowtype/recommended',
 						'prettier',
 					],
 				},
-				plugins: ['prettier', 'flowtype'],
+				plugins: ['prettier'],
 				// envs: ['es6'],
 				parserOptions: {
 					ecmaVersion: 2018,
