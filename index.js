@@ -13,6 +13,8 @@ const prettierrc = () => {
 };
 
 module.exports = (neutrino, { eslint: eslintOptions = {} } = {}) => {
+	// workaround https://github.com/neutrinojs/neutrino/issues/1091
+	neutrino.options.extensions = ['js', 'jsx', 'vue', 'mjs'];
 	// do not lint when running devserver
 	if (neutrino.options.command !== 'start') {
 		neutrino.use(eslint, {

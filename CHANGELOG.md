@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.6
+
+- Workaround extensions bug https://github.com/neutrinojs/neutrino/issues/1091
+
 ## 0.0.5
 
 - Remove flow presets and plugins
