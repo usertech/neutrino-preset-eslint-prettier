@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.5
+
+- Remove flow presets and plugins
+
 ## 0.0.4
 
 - Switch to typescript parser
