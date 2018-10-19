@@ -8,7 +8,7 @@ Preset for neutrino which sets up `eslint` linting configured for use with `pret
 
 Run
 
-    $ yarn add --dev usertech/neutrino-preset-eslint-prettier#0.0.2
+    $ yarn add --dev usertech/neutrino-preset-eslint-prettier#0.0.7
 
 and then **manually install missing peer dependencies**.
 
@@ -17,8 +17,12 @@ and then **manually install missing peer dependencies**.
     // .neutrinorc.js
     module.exports = {
         use: [
-            ['@usertech/neutrino-preset-eslint-prettier'],
-            ...
+            ['@usertech/neutrino-preset-eslint-prettier', {
+                allowDev: true, // allow running on devserver, default is false
+				eslint: {
+					...
+				}
+			}]
         ],
     }
 
