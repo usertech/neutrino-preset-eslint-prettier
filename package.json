@@ -1,21 +1,19 @@
 {
   "name": "@usertech/neutrino-preset-eslint-prettier",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "@neutrinojs/eslint": "^8.3.0",
-    "deepmerge": "^2.2.1"
-  },
-  "peerDependencies": {
-    "babel-eslint": "^8.2.6",
-    "eslint": "^5.4.0",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-babel": "^5.1.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "^7.11.1",
-    "neutrino": "^8.3.0",
-    "prettier": "^1.14.2"
+    "@neutrinojs/eslint": "8.3.0",
+    "deepmerge": "2.2.1",
+    "babel-eslint": "8.2.6",
+    "eslint": "5.4.0",
+    "eslint-config-prettier": "3.0.1",
+    "eslint-plugin-babel": "5.1.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-react": "7.11.1",
+    "neutrino": "8.3.0",
+    "prettier": "1.14.2"
   }
 }
