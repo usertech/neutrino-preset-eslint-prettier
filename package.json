@@ -5,7 +5,8 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "@neutrinojs/eslint": "^8.3.0"
+    "@neutrinojs/eslint": "^8.3.0",
+    "deepmerge": "^2.2.1"
   },
   "peerDependencies": {
     "babel-eslint": "^8.2.6",
