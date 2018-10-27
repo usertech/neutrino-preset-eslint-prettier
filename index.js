@@ -33,7 +33,7 @@ module.exports = (neutrino, { eslint: eslintOptions = {}, allowDev = false } = {
 			ecmaVersion: 2018,
 			sourceType: 'module',
 		},
-		globals: ['process', 'window', 'document', 'navigator', 'console', 'fetch'],
+		globals: ['process', 'window', 'document', 'navigator', 'console', 'fetch', 'module'],
 		rules: {
 			'prettier/prettier': ['error', {}],
 			'react/prop-types': 0,

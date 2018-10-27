@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.8
+
+- Fix dependencies due to bug in eslint plugin resolution
+
 ## 0.0.7
 
 - custom ESLint options are now merging with the default options
