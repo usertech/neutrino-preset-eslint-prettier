@@ -4,7 +4,6 @@
 
 - custom ESLint options are now merging with the default options
 - allowDev param added to run ESLint on devserver
-- move peerDependencies to dependencies - this preset should cover all necessary linting and prettier setup
 
 ## 0.0.6
 
