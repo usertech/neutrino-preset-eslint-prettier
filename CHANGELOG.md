@@ -3,6 +3,8 @@
 ## 0.0.8
 
 - Fix dependencies due to bug in eslint plugin resolution
+- add `module` to known globals
+- custom prettier options are now merging with the default options
 
 ## 0.0.7
 

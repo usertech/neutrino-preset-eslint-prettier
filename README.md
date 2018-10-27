@@ -19,10 +19,13 @@ and then **manually install missing peer dependencies**.
         use: [
             ['@usertech/neutrino-preset-eslint-prettier', {
                 allowDev: true, // allow running on devserver, default is false
-				eslint: {
-					...
-				}
-			}]
+                eslint: {
+                    ...
+                },
+                prettier: {
+                    ...
+                }
+            }]
         ],
     }
 
